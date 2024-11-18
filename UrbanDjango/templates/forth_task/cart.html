@@ -1,13 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Игровая платформа</title>
-</head>
-<body>
-    <h2>Извините, ваша корзина пуста</h2>
-    <ul>
-        <a href="/"><button>Вернуться обратно</button></a>
-    </ul>
-</body>
-</html>
+{% extends "menu.html" %}
+
+{% block pagename %}
+    <h1>Корзина</h1>
+{% endblock %}
+
+{% block menu %}
+    {{ block.super }}
+{% endblock %}
+
+{% block content %}
+    <h2>Извините ваша корзина пуста</h2>
+{% endblock %}
